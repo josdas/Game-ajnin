@@ -17,7 +17,7 @@ public class Coin : SphereScript {
 
     void OnTriggerEnter(Collider other)  {
         if (other.gameObject.tag == "Player") {
-            GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreScript>().update();
+            GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreScript>().UpdateScore();
             var instance = Instantiate(finisher, transform.position, Quaternion.identity);
             Destroy(instance.gameObject, 1);
             Destroy(gameObject, 0.1f);

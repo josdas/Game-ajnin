@@ -15,10 +15,10 @@ public class SpinFree : MonoBehaviour {
 
     void Start() {
         transform.Rotate(
-                         Vector3.up * Random.Range(0, 1) + Vector3.left * Random.Range(0, 1),
+                         Vector3.up * Random.Range(0f, 1f) + Vector3.left * Random.Range(0f, 1f) + Vector3.forward * Random.Range(0f, 1f),
                          Random.Range(0, 360)
                         );
-        clockwise = Random.Range(0, 1) < 0.5;
+        clockwise = Random.Range(0f, 1f) < 0.5;
         speed = Random.Range(5, 30);
     }
 

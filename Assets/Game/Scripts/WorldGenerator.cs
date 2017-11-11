@@ -51,7 +51,7 @@ public class WorldGenerator : MonoBehaviour {
             }
             Vector3 position = Vector3.zero;
             bool genereted = false;
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 20; i++) {
                 var deltaPosition = new Vector3(
                                                 Random.Range(-baseDistance, baseDistance),
                                                 0,

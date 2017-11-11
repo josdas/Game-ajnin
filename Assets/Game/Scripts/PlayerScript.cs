@@ -76,7 +76,7 @@ public class PlayerScript : SphereScript {
         //var angel = Input.GetAxis("Horizontal") * rotateInputSpeed * Time.deltaTime;
         //_direction = Quaternion.Euler(0, angel, 0) * _direction;
 
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space) || Input.touchCount > 0) {
             CurrentPlanet = null;
         }
     }
